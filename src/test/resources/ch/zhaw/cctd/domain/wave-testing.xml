@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cctd version="1">
+	<creeps>
+		<creep id="basic-bunny" title="Bunny">
+			<image path=""/>
+			<life>20</life>
+			<speed>10</speed>
+			<abilities>
+				<ability type="ground"/> <!-- flying -->
+			</abilities>
+		</creep>
+	</creeps>
+	<waves>
+		<wave id="1">
+			<spawntime>0</spawntime>
+			<spawnlength>10</spawnlength>
+			<name>10 Basic Bunnys</name>
+			<creeps spawnmode="row">
+			 	<creep refid="basic-bunny" amount="10"/>
+			</creeps>
+		</wave>
+	</waves>
+</cctd>

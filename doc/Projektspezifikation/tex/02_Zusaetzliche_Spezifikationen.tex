@@ -1,0 +1,88 @@
+\section{Zusätzliche Spezifikationen} \label{sec:Zusaetzliche-Spezifikationen}
+\subsection{Einführung}
+Diese Sektion beschreibt CCTD Spiel Anforderungen, die nicht in den Use Cases erfasst sind.
+\subsection{Funktionalität}
+\textbf{Protokollierung und Fehlerhandhabung}
+
+Alle Fehler in einem persistenten Speicher protokollieren.
+
+% \textbf{Sicherheit}
+% 
+% Um Spieler eindeutig zu identifizieren muss sich jeder Spieler einen Benutzer Namen anlegen. Über diesen Benutzernamen wird der Spieler dann als eindeutiger Spieler behandelt.
+
+\subsection{Usability}
+\textbf{Real Time Spielgeschehen}
+
+Das Spiel soll sich als Echtzeit Spiel anfühlen. Das bedeutet jeder Command wird sofort und ohne grosse Zeitverzögerung ausgeführt und Spiel Elemente können auch ihrerseits jederzeit Aktionen ausführen ohne, dass der Spieler etwas dafür tut. z.B: Türme Schiessen, Creeps bewegen sich. 
+
+\textbf{Spieler Focus}
+
+Jeder Spieler ist für seine Ecke des Spielfeldes verantwortlich. Ein Spieler kann das Spielfeld jedoch erkunden und so zu seinen Kollegen schauen. Dies muss flüssig und vorallem schnell möglich sein, da er nicht viel Zeit hat um sich umzusehen ohne seine Türme zu stark zu vernachlässigen. Es sollte sehr rasch möglich sein für einen Spieler sich auf dem Spielfeld zu orientieren. Hierzu sollten Tastenkürzel bereitstehen um direkt von Basis zu Basis der Kollegen zu wechseln und auch ein Tastenkürzel um wieder zurück zur eigenen Basis zu wechseln.
+
+Generell sollte es dem Spieler jedoch überlassen werden, wo er hinschauen möchte. Er sollte nicht gezwungen sein ständig auf einen Punkt zu starren.
+
+\textbf{Informationen zu Spielelementen}
+
+Ein Spieler sollte alle Spielelemente anklicken können. Hat er ein Element ausgewählt, werden ihm zusätzliche Informationen zu dem Element präsentiert. So kann er beispielsweise Türme seiner Kollegen anschauen und untersuchen oder Creeps anschauen, um festzustellen wie stark sie sind.
+
+%\subsection{Spiel Integrität}
+%Es muss viel Wert darauf gelegt werden, dass das Spielgeschehen ständig auf seine Integrität geprüft wird von allen Clienten. Jeder Client hat die Möglichkeit zum einen die Aktionen seines eigenen Spielers zu prüfen, um falsche Aktionen gar nicht erst zuzulassen. Zusätzlich kann jeder Client jedoch auch die Aktionen anderer Spieler prüfen.
+%
+%Besteht aus irgend einem Grund ein Integritäts Problem bei den Aktionen des lokalen Spielers so sind diese falschen Aktionen durch das Programm zu verhindern und dürfen nicht an den Server weitergeleitet werden. Das Spiel geht aber weiter.
+%
+%Besteht aus irgend einem Grund ein Integritäts Problem innerhalb des Spiels welches auf dem verhalten anderer Spieler basiert, so ist das Spiel auf der Stelle abzubrechen, da ein Spieler vermutlich zu bescheissen versucht. (Cheating)
+%
+\subsection{Wartbarkeit}
+
+\textbf{Anpassbarkeit}
+
+Das Spiel sollte schnell und einfach erweiterbar sein. Es sollen neue Creeps eingefügt werden können, neue Tower Modelle sollen erstellt werden können und neue Tower Updates sollten einfach hinzugefügt werden können.
+
+\textbf{Konfigurierbarkeit}
+
+Alle Einstellungen die man im Spiel vornehmen kann sollten in einem Config File gespeichert werden und sollten auch dort änderbar sein.
+\subsection{Implementierungsbedingungen}
+Das CCTD Spiel wird in Java entwickelt werden, da diese Programmiersprache von allen beteiligten beherrscht wird.
+\subsection{kostenlose Open-Source-Komponenten}
+Im Allgemeinen setzen wir auf möglichst viele kostenlose Java-basierte \glossary{name={Open-Source}, description={bedeutet, dass eine Software nach einem Prinzip der Offenheit entwickelt wurde. Sie wird dann meist mit einer Lizenz versehen, die die weiterverwendbarkeit der Software relativ detailiert regelt.}}{Open-Source}-Komponenten.
+
+Folgende Komponenten werden mit hoher Wahrscheinlichkeit für das Spiel oder zu dessen Entwicklung verwendet:
+\begin{itemize}
+\item JUnit (Testing Framework)
+\item Easymock (Testing Component)
+\item Cobertura (Test Coverage Utility)
+\item log4j (Protokollierungs Framework)
+\end{itemize}
+\subsection{Interfaces}
+\textbf{Grundsätzliche Design Entscheidung:}
+
+Das CCTD Spiel wird grundsätzlich für Computer Bildschirme (12''  und grösser mit einer Mindestauflösung von 1024x768) entwickelt.
+Das Spiel wird auf eine Maus und Tastatur Bedienung ausgelegt.
+
+\textbf{Erweiterbarkeit für spätere Releases:}
+
+Das Spiel kann erweitert werden auf Touchscreen Bedienung und kleinere Bildschirme wie IPads oder Smartphones. 
+
+Dies geschieht jedoch nicht im Release 1.
+\subsection{Softwareschnittstellen}
+Geplant sind keine speziellen Softwareschnittstellen.
+\subsection{Rechtlich}
+
+\textbf{Lizenzen}
+
+Da unsere Software auch wieder als Open-Source publiziert wird ist es möglich andere Open-Source Software komponenten die unter den unten genannten Lizenzen veröffentlicht sind (aber nicht nur) zu verwenden. 
+
+\begin{itemize}
+\item Apache License, 2.0
+\item BSD licenses (New and Simplified)
+\item GNU General Public License (GPL)
+\item GNU Library or "Lesser" General Public License (LGPL)
+\item MIT license
+\item Mozilla Public License 1.1 (MPL)
+\item Common Development and Distribution License
+\item Eclipse Public License
+\item Creative Commons Attribution 2.5 License
+\item Public Domain
+\end{itemize}
+
+Für mehr details besuchen sie bitte diese Seite: \url{http://en.wikipedia.org/wiki/Comparison_of_free_software_licenses}

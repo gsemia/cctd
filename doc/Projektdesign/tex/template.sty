@@ -1,0 +1,227 @@
+\NeedsTeXFormat{LaTeX2e} \ProvidesPackage{template}[2008/03/20 v. 1.0 Template Macros]
+
+% ------------------------------------------------------------------------------
+% Packages
+% ------------------------------------------------------------------------------
+
+% Accept different input encodings
+% Description:
+%   The package translates various standard and other input encodings
+%   into a ‘LaTeX internal language’.  The internal language is
+%   expressed entirely in TeX's base encoding (standard ASCII
+%   printable characters, carriage control tokens and TeX control
+%   sequences, the latter mostly defined by LaTeX).
+%   The package is part of the LaTeX distribution.
+\RequirePackage [utf8] {inputenc} % for German Umlaute like äöü
+
+% Colour control for LaTeX documents
+% Description:
+%   The color package provides both foreground (text, rules, etc.)
+%   and background colour management; it uses the device driver
+%   configuration mechanisms of the
+%   graphics package to determine how to
+%   control its ouptut.
+%   The package is part of the LaTeX graphics bundle.
+\RequirePackage [pdftex] {color}    % for coloured text
+
+% Flexible and complete interface to document dimensions.
+% Description:
+%   The package provides an easy and flexible user interface to
+%   customize page layout, implementing auto-centering and
+%   auto-balancing mechanisms so that the users have only to give the
+%   least description for the page layout.  For example, if you want
+%   to set each margin 2cm without header space, what you need is just
+%   \usepackage[margin=2cm,nohead]{geometry}.
+%   An important feature is the package's ability to communicate the
+%   paper size it's set up to the output (whether via DVI
+%   \specials or via direct interaction with PDF(La)TeX).
+\RequirePackage [top=30mm, bottom=30mm, left=30mm, right=25mm] {geometry}
+
+% helvetica PS fonts with scale factor (looks better)
+\RequirePackage [scaled=0.92] {helvet}
+
+% Typeset source code listings using LaTeX
+% Description:
+%   Typeset programs (programming code) within LaTeX.  The source
+%   code is read directly by TeX. Keywords, comments and strings can
+%   be typeset using different styles (default is bold for keywords,
+%   italic for comments and no special style for strings). Includes
+%   support for hyperref.
+\RequirePackage {listings}
+
+% Multilingual support for Plain TeX or LaTeX
+\RequirePackage[english,german]{babel}
+
+% Publication quality tables in LaTeX
+% Description:
+%   The package enhances the quality of tables in LaTeX, providing
+%   extra commands as well as behind-the-scenes
+%   optimisation. Guidelines are given as to what constitutes a good
+%   table in this context.  From version 1.61, the package offers
+%   longtable compatibility.
+\RequirePackage {booktabs}
+
+% Change format of \today with commands for current time
+% Description:
+%   Provides various different formats for the command
+%   \today, and also provides commands for displaying the
+%   current time, in 12-hour, 24-hour or text format.
+%   The package requires the fmtcount package.
+\RequirePackage{datetime}
+
+% Enhanced support for graphics
+% Description:
+%   Builds upon the graphics
+%   package, providing a key-value interface for optional arguments
+%   to the \includegraphics command that go far beyone what
+%   the graphics package offers. For
+%   extended documentation, see
+%   epslatex.
+\RequirePackage [pdftex] {graphicx}
+
+% Extensive control of page headers and footers in LaTeX2e
+% Description:
+%   The package provides extensive facilities, both for constructing
+%   headers and footers, and for controlling their use (for example,
+%   at times when LaTeX would automatically change the heading style
+%   in use).
+\RequirePackage {fancyhdr}
+
+% Thumbnails for pdfTeX and dvips/ps2pdf
+% Description:
+%   A Perl script that provides support for thumbnails in 
+%   pdfTeX and dvips/ps2pdf.
+%   The script uses ghostscript to
+%   generate the thumbnails which get represented in a TeX readable
+%   file that is read by the package thumbpdf.sty to automatically
+%   include the thumbnails.  This arrangement works with both plain
+%   TeX and LaTeX.
+\RequirePackage{thumbpdf}         % make thumbnails in pdf
+
+% the hyperref package loads package url
+% following line sends options to package 
+\PassOptionsToPackage{hyphens}{url}
+
+% Extensive support for hypertext in LaTeX
+% Description:
+%   The hyperref package is used to handle cross-referencing
+%   commands in LaTeX to produce hypertext links in the document.
+%   The package provides backends for the \special set
+%   defined for HyperTeX DVI processors; for embedded
+%   pdfmark commands for processing by Acrobat Distiller
+%   (dvips and Y's dvipsone); for
+%   Y's dviwindo; for PDF control within pdfTeX and
+%   dvipdfm; for TeX4ht; and for VTeX's pdf and HTML
+%   backends.
+%   The package is distributed with the backref and
+%   nameref packages, which make use of the facilities
+%   of hyperref.
+%   The package depends on the author's kvoptions and
+%   refcount packages.
+%   the hyperref package must be the last package called
+\RequirePackage[pdftex,hyperindex,backref]{hyperref}
+
+% Conditional commands in LaTeX documents
+% Description:
+%   The package's basic command is \ifthenelse, which can use
+%   a wide array of tests.  Also provided is a simple loop command
+%   \whiledo.
+%   The package is part of the LaTeX distribution.
+\RequirePackage{ifthen}
+
+% Draw "watermarks" on the output page
+% Description:
+%   The package implements watermarks using a LaTeX picture
+%   environment that is drawn under the body of the page.  Watermarks
+%   for left and right pages, and for a single page only, may be
+%   specified.
+%   The package is part of the ncctools bundle.
+\usepackage{watermark}
+
+% LaTeX support for the Text Companion fonts.
+% Description:
+%   Supports the Text Companion fonts which provide many text
+%  symbols (such as baht, bullet, copyright, musicalnote,
+%  onequarter, section, and yen) in the TS1 encoding.
+%\usepackage {textcomp} % go for trademarksymbol and for the Celsius Degree
+
+% This package reimplements the LATEX verbatim and verbatim* environments.
+% In addition it provides a comment environment that skips any
+% commands or text between \begin{comment} and the next \end{comment}.
+% It also defines the command verbatiminput to input a whole file verbatim.
+%\usepackage {verbatim}
+
+% Figures broken into subfigures
+% Description:
+%   The package provides support for the manipulation and reference of
+%   small or ‘sub’ figures and tables within a single
+%   figure or table environment. It is convenient to use this package
+%   when your subfigures are to be separately captioned, referenced,
+%   or are to be included in the List-of-Figures. A new
+%   \subfigure command is introduced which can be used inside a
+%   figure environment for each subfigure. An optional first
+%   argument is used as the caption for that subfigure.
+%
+%   This package supersedes the
+%   subfigure package (which will
+%   continue to be supported, but no longer maintained).  The name has
+%   changed because the subfig package is not completely backward
+%   compatible with the older subfigure package due to an extensive
+%   rewrite to use the new caption
+%   package to produce its subcaptions.  The major advantage to the
+%   new package is that the user interface is keyword/value driven and
+%   easier to use.  To ease the transition from the subfigure package
+%   it includes a configuration file (subfig.cfg) which nearly
+%   emulates the subfigure package.
+\RequirePackage{subfig}
+
+% Create illustrations for network protocol specifications.
+% Description:
+% The bytefield package helps the user create illustrations for
+% network protocol specifications and anything else that utilizes
+% fields of data.  These illustrations show how the bits and bytes
+% are laid out in a packet or in memory.
+\usepackage {bytefield}
+
+%\usepackage{multirow}
+
+%\usepackage {delarray
+
+%\usepackage {dcolumn}
+
+%\usepackage {xspace}
+
+
+% Produces figures which text can flow around.
+% Description:
+%   Allows figures to have text wrapped around them.  Does not work
+%   in combination with list environments, but can be used in a
+%   parbox or minipage, and in twocolumn format. Supports the float
+%   package.
+%
+%   Note that most of the package documentation is contained in
+%   wrapfig.sty itself (after the \endinput command at the
+%   end of the package proper).
+\RequirePackage{wrapfig}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{units}
+
+% symbolic fonts
+%\usepackage {latexsym}
+
+%\usepackage {marvosym}
+
+\RequirePackage{colortbl}
+
+\RequirePackage{wasysym}
+
+% Tracktool Package with self defined commands
+\RequirePackage {template_commands}
+
+% Tracktool Package settings
+\RequirePackage{template_settings}

@@ -1,0 +1,62 @@
+\documentclass{templatearticle}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[cols=3,style=long]{glossary}
+\usepackage[geometry]{ifsym}
+
+% -----------------------------------------------------------------------------
+% User settings
+% -----------------------------------------------------------------------------
+\myDoctype {Projektspezifikation}
+\myDivision {}
+\myTitle {Cube Circle Tower Defense (CCTD)}
+\mySubTitle {}
+\myAuthor {Rolf Koch, Lukas Spirig, Benjamin Felder, Fabian Eriksson, Nathanael Koch}
+%\myCompany {}
+%\myStreet {}
+%\myPLZ {}
+%\myTown {}
+%\myPhone {}
+%\myFax {}
+%\myWebsite {}
+\myVersion {1.0}
+%\myConfidential{Vertraulich}
+%\myDraft{Entwurf}
+\myLanguage{german} % german or english
+\makeglossary 		% Setup Glossary
+
+% -----------------------------------------------------------------------------
+% Document: provide the two files abstract.tex and history.tex
+% -----------------------------------------------------------------------------
+\begin{document}
+\setupLanguage            % setup configured language
+\setupWatermarks          % setup watermarks
+\printTitlePage{abstract} % include "abstract.tex"
+\printLeader{history}     % include "history.tex"
+
+% -----------------------------------------------------------------------------
+% Glossary: Default Set of Glossary Entries. More can be added 
+%               anywhere in the Document.
+% -----------------------------------------------------------------------------
+
+\setlength{\descriptionwidth}{0.75\linewidth}
+\glossary{name={CCTD}, description={Cube Circle Tower Defense}}{CCTD}
+
+% -----------------------------------------------------------------------------
+% Input user files with LaTex text sections
+% -----------------------------------------------------------------------------
+\input{00_Projectmanagement} \newpage
+\input{01_Anwendungsfaelle} \newpage
+\input{02_Zusaetzliche_Spezifikationen} \newpage
+\input{03_Diagramme} \newpage
+\input{04_Systemoperationen} \newpage
+\input{05_Architektur} \newpage
+\addcontentsline{toc}{section}{Glossar}
+\printglossary \newpage
+\addcontentsline{toc}{section}{Abbildungen}
+\listoffigures
+\addcontentsline{toc}{section}{Tabellen}
+\listoftables
+
+\end{document}
+<\PRE>

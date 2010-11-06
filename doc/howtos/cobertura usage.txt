@@ -1,0 +1,47 @@
+COBERTURA
+-----------------------------
+Cobertura erstellt eine Statistik über die Test Coverage. Es wird gemessen welche 
+Zeilen Code einem Test unterliegen und welche nicht. Das ganze wird dann als HTML 
+Report generiert und im target Ordner abgelegt.
+
+
+INSTALLATION:
+-----------------------------
+Für unser Projekt ist dies bereits geschehen. Eingefügt wurde folgender Eintrag 
+ins Pom.XML:
+
+ <project>
+    ..
+	<reporting>
+		<plugins>
+			..
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+			..		
+		</plugins>
+	</reporting>
+	..
+ </project>
+ 
+ 
+USAGE:
+-----------------------------
+Um Cobertura auszuführen hab ich etwas mühe gehabt. Es läuft nicht direkt beim PAckage 
+erstellen, ich musste dafür eine separate Run Configuration erstellen
+
+  Run as --> Run Configurations..
+
+Dort erstellt man einen neuen Maven Build mit folgenden Settings:
+
+  Name: Maven - Cobertura
+  Base directory: Project Root Directory
+  Goals: cobertura:cobertura
+  Profiles: dev (oder auch andere halt)
+
+Klick auf Apply und Run. Von nun an kann mans direkt im Run Menu auswählen.
+
+Das Resultat des Coverage Reports liegt dann im {$projectroot}/target/site/cobertura 
+Ordner.

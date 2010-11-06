@@ -1,0 +1,18 @@
+\section{Hauptanwendungsfall}
+Das Spiel muss mit mindestens einem Spieler gespielt werden. Maximal können am Spiel 4 Personen teilnehmen.
+Der Spielablauf funktioniert folgendermassen:
+
+\begin{itemize}
+	\item Ein Spieler erstellt ein Spiel und startet es bei Erreichen der gewünschten Anzahl Spieler.
+	\item Haben alle Spieler das Spiel betreten, beginnt der eigentliche Spielverlauf.
+	\item Alle Spieler sehen einen Kartenausschnitt, der 1/4 der gesamten Karte ausmacht.
+	\item Vor Beginn der ersten Runde haben alle Spieler Zeit um die ersten Türme mit ihrem Startkapital zu bauen.
+	\item Nach Ablauf dieser Schonzeit erscheinen die Gegner an allen Seiten die von Spieler belegt sind und laufen auf auf dem Pfad entlang. Pro Gegner, der das Spielfeld betritt wird ein Zähler um 1 inkrementiert.
+	\item Erreicht der Zähler eine vordefinierte Grenze ist das Spiel verloren.
+	\item Die von den Spielern erstellten Türme beginnen autonom auf die Gegner in Reichweite zu schiessen.
+	\item Gegner die getroffen werden verlieren Lebenspunkte und verschwinden vom Spielfeld, wenn diese 0 Lebenspunkte erreichen. Der Gegner-Zähler wird dadurch um 1 dekrementiert.
+	\item Durch das zerstören von Gegnern bekommen die Spieler Geld, welches sie brauchen um neue Türme zu bauen.
+	\item Mit Geld kann man auch bestehende Türme erweitern(updaten) und so die Kerneigenschaften stärken (Von Typ zu Typ verschieden).
+	\item Nach einer gewissen Zeit erscheinen wieder neue Gegner(Neue Runde/Wave), welche wieder von den Türmen angegriffen werden.
+	\item Damit die Spieler gewinnen können, müssen diese alle Runden/Creep-Wellen überstehen und alle übrig gebliebenen Creeps besiegen. Die Anzahl Runden werden vom Server bestimmt.
+\end{itemize}

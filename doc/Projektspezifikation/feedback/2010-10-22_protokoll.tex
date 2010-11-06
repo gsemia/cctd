@@ -1,0 +1,77 @@
+
+\documentclass[a4paper, headsepline, footsepline, oneside]{scrartcl}
+
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{pdfpages}
+\usepackage[plainfootsepline ]{scrpage2}
+\usepackage{url}
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+% Seitenhöhe anpassen
+\usepackage[height=680pt, width=500pt]{geometry}
+\usepackage {booktabs}
+\usepackage[colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksopen = true,bookmarksnumbered = true,linkcolor = black,plainpages = false,hypertexnames = false,citecolor = black] {hyperref}
+\hypersetup{pdftitle={Protokoll - Feedback Projektspezifikation}}
+% Kopf und Fusszeilen
+
+\renewcommand*{\titlepagestyle}{scrheadings}
+\pagestyle{scrheadings}
+\headheight 50 pt
+
+% Header
+%\ihead{\sf{\hspace{7mm} \huge ...}}
+\ohead{\includegraphics[scale=0.4]{zhaw_logo_de.jpg}}
+
+% Footer
+\ifoot{ZHAW / SEP: Feedback Projektspezifikation}
+\ofoot{R.Koch, L.Spirig, B.Felder, F.Eriksson, N.Koch}
+
+\begin{document}
+
+\author{Rolf Koch, Lukas Spirig, Benjamin Felder, Fabian Eriksson, Nathanael Koch}
+\subject{SWE / SEP}
+\title{Protokoll: Feedback Projektspezifikation}
+\maketitle
+
+\section{Protokoll 22.10.2010}
+\subsection{Anwendungsall-Diagramm / UseCase-Diagramm}
+UseCases sind Aktionen und sollten deswegen immer ein Verb im Namen haben \\
+UseCase ``Chat'' in ``chatten'' umbenennen \\
+UseCase ``Spiel starten'': \begin{itemize}
+\item sollte es um den Start des Spiels gehen und nicht um das ganze Spiel (Das Beenden ist nicht teil davon) 
+\item evtl. aufsplitten in mehrere UseCases
+\end{itemize}
+\subsection{Sequenzdiagramm}
+Umbenennen in System-Sequenzdiagramm \\
+Komplexität des ``Spiel starten'' ist an der oberen Grenze bezüglich Komplexität \\
+closeGame sollte entfernt werden
+\subsection{Systemoperationen}
+Operationen/Methoden: Datentypen fehlen (bei Parameter und Rückgabewert)
+\subsection{Domainmodel}
+Das Domainmodel beschreibt das Problem und sollte deshalb \textbf{keine} Lösungsansätze beinhalten. GUI kann z.B. entfernt werden. \\
+Beschreibung der einzelnen Domains fehlen \\
+Map $\rightarrow$ ConstructionZone: Pfeil fehlt
+\subsection{Projektmanagment}
+Soll- und Ist-Aufwand in Stunden sollte hinzugefügt werden.
+\subsection{Zusätzliche Spezifikationen}
+vorsichtig mit Anforderungen in diesem Dokument, diese sind schlussendlich \textbf{bindend} \\
+\textbf{Spielerfocus/Kameraführung}: ist für jetzt OK. Später evtl. in ein UseCase umwandenln \\
+\textbf{Spiele integrität}: kann gestrichen werden \\
+\textbf{Real-time Anforderungen}: müssen hinzugefügt werden
+\subsection{Architektur}
+\begin{itemize}
+\item Client / Server Konzept sollte mehr hervorgehoben werden
+\item THIN- oder FAT-Client festlegen
+\item sync?
+\item Zusammenhang mit real-time Anforderungen
+\end{itemize}
+\subsection{Präsentation von nächster Woche}
+ca. 10 minuten, eventuell bereits mit Prototype
+
+\end{document}
+

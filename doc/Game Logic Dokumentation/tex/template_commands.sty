@@ -1,0 +1,205 @@
+\NeedsTeXFormat{LaTeX2e} \ProvidesPackage{template_commands}[2008/03/20 v. 1.0 Template Package Setting]
+
+% ------------------------------------------------------------------------------
+% Tracktool Document Commands
+% ------------------------------------------------------------------------------
+\newcommand{\PrintmyProduct}{}
+\newcommand{\myProduct}[1]{\renewcommand{\PrintmyProduct}{#1}}
+
+\newcommand{\PrintmyTitle}{Document Title}
+\newcommand{\myTitle}[1]{\renewcommand{\PrintmyTitle}{#1}}
+
+\newcommand{\PrintmySubTitle}{Document Subtitle}
+\newcommand{\mySubTitle}[1]{\renewcommand{\PrintmySubTitle}{#1}}
+
+\newcommand{\PrintmyDoctype}{Documentation}
+\newcommand{\myDoctype}[1]{\renewcommand{\PrintmyDoctype}{#1}}
+
+\newcommand{\PrintmyAuthor}{Document Author}
+\newcommand{\myAuthor}[1]{\renewcommand{\PrintmyAuthor}{#1}}
+
+\newcommand{\PrintmyDivision}{Entwicklung}
+\newcommand{\myDivision}[1]{\renewcommand{\PrintmyDivision}{#1}}
+
+\newcommand{\PrintmyCompany}{ZHAW}
+\newcommand{\myCompany}[1]{\renewcommand{\PrintmyCompany}{#1}}
+
+\newcommand{\PrintmyStreet}{Technikumstrasse 9}
+\newcommand{\myStreet}[1]{\renewcommand{\PrintmyStreet}{#1}}
+
+\newcommand{\PrintmyPLZ}{CH-8401}
+\newcommand{\myPLZ}[1]{\renewcommand{\PrintmyPLZ}{#1}}
+
+\newcommand{\PrintmyTown}{Winterthur}
+\newcommand{\myTown}[1]{\renewcommand{\PrintmyTown}{#1}}
+
+\newcommand{\PrintmyPhone}{+41 58 934 71 71}
+\newcommand{\myPhone}[1]{\renewcommand{\PrintmyPhone}{#1}}
+
+\newcommand{\PrintmyFax}{+41 58 935 71 71}
+\newcommand{\myFax}[1]{\renewcommand{\PrintmyFax}{#1}}
+
+\newcommand{\PrintmyWebsite}{www.zhaw.ch}
+\newcommand{\myWebsite}[1]{\renewcommand{\PrintmyWebsite}{#1}}
+
+\newcommand{\PrintmyEMail}{info@zhaw.ch}
+\newcommand{\myEMail}[1]{\renewcommand{\PrintmyEMail}{#1}}
+
+\newcommand{\PrintmyVersion}{Version X.X.X}
+\newcommand{\myVersion}[1]{\renewcommand{\PrintmyVersion}{#1}}
+
+\newcommand{\PrintmyRevision}{Revision XXXX}
+\newcommand{\myRevision}[1]{\renewcommand{\PrintmyRevision}{#1}}
+
+\newcommand{\PrintmyDocnum}{Nummer noch nicht erfasst}
+\newcommand{\myDocnum}[1]{\renewcommand{\PrintmyDocnum}{#1}}
+
+\newcommand{\PrintmyConfidential}{}
+\newcommand{\myConfidential}[1]{\renewcommand{\PrintmyConfidential}{#1}}
+
+\newcommand{\PrintmyDraft}{}
+\newcommand{\myDraft}[1]{\renewcommand{\PrintmyDraft}{#1}}
+
+\newcommand{\PrintmyMemorandumFrom}{\PrintmyVisum}
+\newcommand{\myMemorandumFrom}[1]{\renewcommand{\PrintmyMemorandumFrom}{#1}}
+
+\newcommand{\PrintmyMemorandumTo}{}
+\newcommand{\myMemorandumTo}[1]{\renewcommand{\PrintmyMemorandumTo}{#1}}
+
+\newcommand{\PrintmyMemorandumCc}{}
+\newcommand{\myMemorandumCc}[1]{\renewcommand{\PrintmyMemorandumCc}{#1}}
+
+\newcommand{\PrintmyMemorandumDate}{missing Date}
+\newcommand{\myMemorandumDate}[1]{\renewcommand{\PrintmyMemorandumDate}{#1}}
+
+\newcommand{\PrintmyMemorandumDateType}{missing Type}
+\newcommand{\myMemorandumDateType}[1]{\renewcommand{\PrintmyMemorandumDateType}{#1}}
+
+\newcommand{\PrintmyLanguage}{german}
+\newcommand{\myLanguage}[1]{\renewcommand{\PrintmyLanguage}{#1}}
+
+% ------------------------------------------------------------------------------
+% collection of Tracktool Commands
+% ------------------------------------------------------------------------------
+
+% typesetting numbers with units
+% parameter 1: number, parameter 2: unit
+\newcommand{\num}[2]{#1\,#2}
+
+% special reference commands
+\newcommand{\refAbb}[1]{Abb.:\,\ref{#1}}
+\newcommand{\refFig}[1]{fig.:\,\ref{#1}}
+\newcommand{\refTab}[1]{Tab.:\,\ref{#1}}
+\newcommand{\refAbs}[1]{Abs.:\,\ref{#1}}
+\newcommand{\refAppendix}[1]{Anhang\,\ref{#1}}
+
+% comment
+\newcommand{\comment}[1]{\textcolor{fgcgray}{\scriptsize #1}}
+
+% quote
+\newcommand {\qstart}{\glqq}
+\newcommand {\qend}{\grqq\xspace}
+
+% degree character °
+\newcommand{\grad}{	\ensuremath{^\circ}}
+
+% tracktool-style header and footer (title page)
+\newcommand{\headerlogotitle}
+{
+	\setlength{\unitlength}{1mm}
+	\begin{picture}(0, 0)
+		\put(-25, -15){\usebox{\neuronicslogoheadertitle}}
+	\end{picture}
+}
+\newsavebox{\neuronicslogoheadertitle}
+\sbox{\neuronicslogoheadertitle}{\includegraphics[scale=0.15]{./graphics/zhaw_title_logo}}
+
+% tracktool-style header and footer (normal page)
+\newcommand{\headerlogo}
+{
+	\setlength{\unitlength}{1mm}
+	\begin{picture}(0, 0)
+		\put(-12, 0){\usebox{\neuronicslogoheader}}
+	\end{picture}
+}
+\newsavebox{\neuronicslogoheader}
+\sbox{\neuronicslogoheader}{\includegraphics[scale=0.08]{./graphics/zhaw_logo}}
+
+
+% -----------------------------------------------------------------------------
+% formula command
+% -----------------------------------------------------------------------------
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\spaceline}{\mbox{}\\}
+
+\definecolor{lightyellow}{rgb}{1, 0.9, 0.5}
+\newenvironment{eq}[1]
+{
+	\fcolorbox{white}{lightyellow}{
+		\parbox{7cm}{\begin{equation*}#1\end{equation*}}
+	}
+}
+
+\newenvironment{eqbig}[1]
+{
+	\fcolorbox{white}{lightyellow}{
+		\parbox{15.25cm}{\begin{equation*}#1\end{equation*}}
+	}
+}
+
+\newenvironment{desc}[1]
+{
+	\parbox{6.7cm}{\begin{tabular}{p{1.2cm}p{3.6cm}p{1.7cm}}#1\end{tabular}}
+}
+
+
+% -----------------------------------------------------------------------------
+% define command to parse the SVN Revision string
+% -----------------------------------------------------------------------------
+\def\SVNrevision$#1: #2${#2}
+
+\newcommand{\setupLanguage}
+{
+	\ifthenelse{\equal{\PrintmyLanguage}{english}}{\selectlanguage{english}}{\selectlanguage{german}}
+}
+
+\newcommand{\setupWatermarks}
+{
+	% Wasserzeichen: Vertraulich, Entwurf
+	\ifthenelse{\equal{\PrintmyConfidential}{}}
+	{
+		\ifthenelse{\equal{\PrintmyDraft}{}}
+		{
+			% no watermark
+		}
+		{
+			\watermark
+			{
+				\begin{picture}(0, 0)
+				\put(200, -250){\includegraphics{./graphics/draft-light}}
+				\end{picture}
+			}
+		}
+	}
+	{
+		\ifthenelse{\equal{\PrintmyDraft}{}}
+		{
+			\watermark
+			{
+				\begin{picture}(0, 0)
+				\put(200, -250){\includegraphics{./graphics/confidential-light}}
+				\end{picture}
+			}
+		}
+		{
+			\watermark
+			{
+				\begin{picture}(0, 0)
+				\put(200, -185){\includegraphics{./graphics/draft-light}}
+				\put(200, -350){\includegraphics{./graphics/confidential-light}}
+				\end{picture}
+			}
+		}
+	}
+}

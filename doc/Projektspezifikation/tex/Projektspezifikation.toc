@@ -1,0 +1,49 @@
+\select@language {german}
+\select@language {german}
+\contentsline {section}{\numberline {1}Projekt Management}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Aktueller Status}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Massnahmen}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Weitere Planung}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Risiken}{2}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Nachfrage}{2}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Projektumfang}{2}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Mitarbeiter Motivation}{2}{subsection.1.7}
+\contentsline {section}{\numberline {2}Anwendungsf\IeC {\"a}lle}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Use Case Diagram}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Use Case UC1: Spiel starten}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Use Case UC2: Spiel hosten}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Use Case U3: Spiel beitreten}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Use Case UC4: Turm bauen}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Use Case UC5: Turm upgraden}{6}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Use Case UC6: Turm upgraden: Selbst upgraden}{7}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Use Case UC7: Turm upgraden: Team upgraden}{7}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Use Case UC8: Geld verschenken}{7}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Use Case UC9: Chatten}{7}{subsection.2.10}
+\contentsline {subsection}{\numberline {2.11}Use Case UC10: Optionen anpassen}{7}{subsection.2.11}
+\contentsline {subsection}{\numberline {2.12}Use Case UC11: Spiel beenden}{8}{subsection.2.12}
+\contentsline {section}{\numberline {3}Zus\IeC {\"a}tzliche Spezifikationen}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Einf\IeC {\"u}hrung}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Funktionalit\IeC {\"a}t}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Usability}{9}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Wartbarkeit}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Implementierungsbedingungen}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}kostenlose Open-Source-Komponenten}{10}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Interfaces}{10}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Softwareschnittstellen}{10}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Rechtlich}{10}{subsection.3.9}
+\contentsline {section}{\numberline {4}Diagramme}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Dom\IeC {\"a}nenmodell}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}System-Sequenzdiagramm}{13}{subsection.4.2}
+\contentsline {section}{\numberline {5}Systemoperationen}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Contract CO1: startGame}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Contract CO2: verifyUser}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Contract CO3: new SingleplayerGame}{14}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Contract CO4: new MultiplayerGame}{14}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Contract CO5: hostGame}{14}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Contract CO6: searchGame}{15}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Contract CO7: selectGame}{15}{subsection.5.7}
+\contentsline {section}{\numberline {6}Architektur}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}Logische Architektur}{16}{subsection.6.1}
+\contentsline {section}{Glossar}{17}{table.4}
+\contentsline {section}{Abbildungen}{17}{table.4}
+\contentsline {section}{Tabellen}{17}{section*.9}

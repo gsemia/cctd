@@ -1,0 +1,81 @@
+\section{Systemoperationen}
+
+Die folgenden Contracts beschreiben alle Systemoperationen des Use Cases UC1 ``Start Game'', welche im Sequenzdiagramm aufgeführt sind. Hierbei wird aufgezeigt, welche Operationen der User im Startprozess auslösen kann und was die Antwort des Systems darauf ist.
+
+\subsection{Contract CO1: startGame}
+
+\begin{tabular}{| p{0.2\textwidth} p{0.75\textwidth} |}
+\hline
+\textbf{Operation:} & \verb+void startGame()+ \\
+\textbf{Querverweise:} & Use Cases: Start Game \\
+\textbf{Vorbedingungen:} & - \\
+\textbf{Nachbedingungen:} & \SquareShadowB \hspace{1mm} Das Spiel wurde gestartet \\
+ & \SquareShadowB \hspace{1mm} Das Anmeldefenster ist erschienen\\
+\hline
+\end{tabular}
+
+\subsection{Contract CO2: new SingleplayerGame}
+
+\begin{tabular}{| p{0.2\textwidth} p{0.75\textwidth} |}
+\hline
+\textbf{Operation:} & \verb+new SingleplayerGame()+ \\
+\textbf{Querverweise:} & Use Cases: Start Game \\
+\textbf{Vorbedingungen:} & - Das Spiel wurde bereits gestartet\\
+ & - Der Benutzer ist mit dem Server verbunden\\
+\textbf{Nachbedingungen:} & \SquareShadowB \hspace{1mm} Ein Einzelspieler-Spiel wurde gestartet\\
+\hline
+\end{tabular}
+
+\subsection{Contract CO3: new MultiplayerGame}
+
+\begin{tabular}{| p{0.2\textwidth} p{0.75\textwidth} |}
+\hline
+\textbf{Operation:} & \verb+new MultiplayerGame()+ \\
+\textbf{Querverweise:} & Use Cases: Start Game \\
+\textbf{Vorbedingungen:} & - Das Spiel wurde bereits gestartet\\
+ & - Der Benutzer ist mit dem Server verbunden\\
+\textbf{Nachbedingungen:} & \SquareShadowB \hspace{1mm} Die Multiplayer Lobby wird angezeigt\\
+\hline
+\end{tabular}
+
+\subsection{Contract CO4: hostGame}
+
+\begin{tabular}{| p{0.2\textwidth} p{0.75\textwidth} |}
+\hline
+\textbf{Operation:} & \verb+void hostGame()+ \\
+\textbf{Querverweise:} & Use Cases: Start Game \\
+\textbf{Vorbedingungen:} & - Das Spiel wurde bereits gestartet\\
+ & - Der Spieler hat den Multiplayer Modus gewählt\\
+\textbf{Nachbedingungen:} & \SquareShadowB \hspace{1mm} Der Spieler hostet ein Spiel und wartet auf weitere Spieler\\
+ & \SquareShadowB \hspace{1mm} Sind alle Spieler bereit, wird das Multiplayer Spiel gestartet\\
+\hline
+\end{tabular}
+
+\subsection{Contract CO5: searchGame}
+
+\begin{tabular}{| p{0.2\textwidth} p{0.75\textwidth} |}
+\hline
+\textbf{Operation:} & \verb+Game[] searchGame()+ \\
+\textbf{Querverweise:} & Use Cases: Start Game \\
+\textbf{Vorbedingungen:} & - Das Spiel wurde bereits gestartet\\
+ & - Der Benutzer ist mit dem Server verbunden\\
+ & - Der Spieler hat den Multiplayer Modus gewählt\\
+\textbf{Nachbedingungen:} & \SquareShadowB \hspace{1mm} Es erscheint eine Liste mit den zur Zeit gehosteten Spieler, welche noch nicht gestartet sind.\\
+\hline
+\end{tabular}
+
+\subsection{Contract CO6: selectGame}
+
+\begin{tabular}{| p{0.2\textwidth} p{0.75\textwidth} |}
+\hline
+\textbf{Operation:} & \verb+Game selectGame(int id)+ \\
+\textbf{Querverweise:} & Use Cases: Start Game \\
+\textbf{Vorbedingungen:} & - Das Spiel wurde bereits gestartet\\
+ & - Der Benutzer ist mit dem Server verbunden\\
+ & - Der Spieler hat den Multiplayer Modus gewählt\\
+ & - Der Spieler hat gewählt, dass er einem Spiel beitreten will\\
+\textbf{Nachbedingungen:} & \SquareShadowB \hspace{1mm} Der Spieler hat ein Spiel gewählt und wartet auf weitere Spieler\\
+ & \SquareShadowB \hspace{1mm} Sind alle Spieler bereit, wird das Multiplayer Spiel gestartet\\
+\hline
+\end{tabular}
+

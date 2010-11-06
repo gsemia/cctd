@@ -1,0 +1,50 @@
+\documentclass{templatearticle}
+%\usepackage{multicol}
+\usepackage{multirow}
+
+% -----------------------------------------------------------------------------
+% User settings
+% -----------------------------------------------------------------------------
+\myDoctype {Game Logic Dokumentation}
+\myDivision {}
+\myTitle {Cube Circle Tower Defense (CCTD)}
+\mySubTitle {}
+\myAuthor {Rolf Koch, Lukas Spirig, Ben Felder, Fabian Eriksson, Nathanael Koch}
+%\myCompany {}
+%\myStreet {}
+%\myPLZ {}
+%\myTown {}
+%\myPhone {}
+%\myFax {}
+%\myWebsite {}
+\myVersion {1.0}
+%\myConfidential{Vertraulich}
+%\myDraft{Entwurf}
+\myLanguage{german} % german or english
+
+% -----------------------------------------------------------------------------
+% Document: provide the two files abstract.tex and history.tex
+% -----------------------------------------------------------------------------
+\begin{document}
+\setupLanguage            % setup configured language
+\setupWatermarks          % setup watermarks
+\printTitlePage{abstract} % include "abstract.tex"
+\printLeader{history}     % include "history.tex"
+
+% -----------------------------------------------------------------------------
+% Input user files with LaTex text sections
+% -----------------------------------------------------------------------------
+\input{01_ServerClient} \newpage
+\input{02_Playfield} \newpage
+\input{03_TowerTypes} \newpage
+\input{04_TowerAttributes} \newpage
+\input{05_TowerUpdates} \newpage
+\input{06_CreepsPathing} \newpage
+\input{07_CreepTypes} \newpage
+\input{08_CreepAttributes} \newpage
+\input{09_Grafiken} \newpage
+\input{10_Waves}
+
+
+\end{document}
+<\PRE>

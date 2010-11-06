@@ -1,0 +1,14 @@
+Beschreibung des ziels
+Weg zum Ziel
+Risiken 
+Wirtschaftlichkeit
+
+Aufbau:
+- Idee 
+- Hauptanwendungsfall
+- Weitere Anforderungen
+- Ressourcen
+- Risiken
+- Grobplanung
+- Kundennutzen
+- Wirtschaftlichkeit

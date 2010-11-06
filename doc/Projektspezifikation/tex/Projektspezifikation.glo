@@ -1,0 +1,11 @@
+\glossaryentry{CCTD@{\glosslabel{glo:CCTD}{CCTD}}Cube Circle Tower Defense\relax|glsnumformat}{1}
+\glossaryentry{Turm@{\glosslabel{glo:Turm}{Turm}}Eine Einheit, die vom Benutzer gebaut wird und autonom auf Creeps schiesst.\relax|glsnumformat}{4}
+\glossaryentry{Tower@{\glosslabel{glo:Tower}{Tower}}Siehe Turm\relax|glsnumformat}{4}
+\glossaryentry{Wave@{\glosslabel{glo:Wave}{Wave}}(Welle), besteht aus einer variirenden Anzahl an Creeps, die zusammen auf das Spielfeld tretten\relax|glsnumformat}{5}
+\glossaryentry{Spawn-Point@{\glosslabel{glo:Spawn-Point}{Spawn-Point}}Sind die Punkte auf der Karte, wo die Creeps auf das Spielfeld tretten\relax|glsnumformat}{5}
+\glossaryentry{Open-Source@{\glosslabel{glo:Open-Source}{Open-Source}}bedeutet, dass eine Software nach einem Prinzip der Offenheit entwickelt wurde. Sie wird dann meist mit einer Lizenz versehen, die die weiterverwendbarkeit der Software relativ detailiert regelt.\relax|glsnumformat}{9}
+\glossaryentry{Lane@{\glosslabel{glo:Lane}{Lane}}Weg, auf welchem sich die Creeps bewegen\relax|glsnumformat}{11}
+\glossaryentry{Wave@{\glosslabel{glo:Wave}{Wave}}Spielrunde. Bestimmte Anzahl creeps, die bei jedem Spieler spawnen\relax|glsnumformat}{11}
+\glossaryentry{to spawn@{\glosslabel{glo:to spawn}{to spawn}}erzeugen, generieren von creeps\relax|glsnumformat}{11}
+\glossaryentry{Viewport@{\glosslabel{glo:Viewport}{Viewport}}Virtuelles Fenster für den Benutzer wodurch sie/er einen Bereich des Spiels sieht\relax|glsnumformat}{16}
+\glossaryentry{Creep@{\glosslabel{glo:Creep}{Creep}}gegnerisches Monster, welches abgeschossen werden soll\relax|glsnumformat}{16}

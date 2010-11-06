@@ -1,0 +1,106 @@
+\NeedsTeXFormat{LaTeX2e} \ProvidesPackage{template_settings}[2008/03/20 v. 1.0 Template Package Setting]
+
+% ------------------------------------------------------------------------------
+% Settings
+% ------------------------------------------------------------------------------
+
+%\PrerenderUnicode{ü}
+
+% define graphic format the can be used
+\DeclareGraphicsExtensions{.jpg,.png,.pdf,.gif,.bmp}
+
+% define path where graphic files are searched
+\graphicspath{{./graphics/}{./images/}}
+
+% change default font to helvetica 
+% - With the package helvet.syt sf-font is helvetica
+\renewcommand{\familydefault}{\sfdefault}
+
+% set default document language
+%\selectlanguage{german}
+
+% ------------------------------------------------------------------------------
+% setup colors
+% ------------------------------------------------------------------------------
+\definecolor{NeuronicsBlue}{rgb}{0.882,0.933,1}
+\definecolor{NeuronicsBlue}{rgb}{0.882,0.933,1}
+\definecolor{tblgray1}{rgb}{0.7, 0.7, 0.7}
+\definecolor{tblgray2}{rgb}{0.8, 0.8, 0.8}
+\definecolor{fgcgray}{rgb}{0.4, 0.4, 0.4}
+\definecolor{warning}{rgb}{0.9, 0.1, 0.0}
+\definecolor{bgctitle}{rgb}{0.5, 0.5, 0.5}
+\definecolor{fgctitle}{rgb}{0.95, 0.95, 0.95}
+
+\pdfcompresslevel=9
+
+% setup colored links and other stuff
+\hypersetup{
+	colorlinks=true, 
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=blue,
+	menucolor=black,
+	pagecolor=black,
+	urlcolor=blue,
+	breaklinks=true,
+	pdfnewwindow=true,
+%	pdfauthor=pdfauthor,
+%	pdftitle=pdftitle,
+%	pdfcreationdate=D:\pdfdate,
+%	pdfmoddate=D:\pdfdate,
+%	pdfsubject=pdfsuject,
+%	pdfkeywords=pdfkeywords
+}
+
+% define this command to be used the configuration of the man document
+\newcommand{\setPDFinfo}
+{
+	\pdfinfo{
+		/Author (\PrintmyAuthor)
+		/Title (\PrintmyTitle)
+		/CreationDate (D:\pdfdate)
+		/ModDate (D:\pdfdate)
+		/Subject (\PrintmySubTitle)
+		/Keywords (\PrintmyDoctype, \PrintmyDivision, \PrintmyCompany)
+	}
+}
+
+% Tracktool page Pagestyle (fancy headers) 
+\fancypagestyle{tracktool}{
+	\fancyhf{} % clear all header and footer fields
+
+	\renewcommand{\headrulewidth}{0.2pt}
+	\fancyhead[L]{\PrintmyTitle}
+	\fancyhead[R]{\headerlogo}
+
+	\renewcommand{\footrulewidth}{0.2pt}
+	\fancyfoot[L]{Version \PrintmyVersion \hspace{1pt} / \@date} %{Document \PrintmyDocnum}
+	\fancyfoot[C]{\sc{\textcolor{red}\PrintmyConfidential  \hspace{5mm} \textcolor{red}\PrintmyDraft}}
+	\fancyfoot[R]{\thepage}
+}
+
+% set fancy headers page style
+\pagestyle{tracktool}
+
+% setup listings
+\lstset{
+    mathescape=false,       %do not use $ as math escape
+    showstringspaces=false, %do not print spaces
+    numbers=left,           %place to write numbers
+    numberstyle=\color[rgb]{0.7,0.7,0.7}\tiny,    %style for line numbers
+%    stepnumber=5,           %number each 5th line
+%    numbersep=5pt,
+%    basicstyle=\normalfont\scriptsize,
+	basicstyle=\small\ttfamily,
+	columns=fullflexible,
+	breakatwhitespace=true
+	tabsize=2,
+    breaklines=true,          %break long lines
+%    linewidth=\textwidth,
+%    breakindent=0.5cm,        %broken lines are indented 0.5 cm
+%    breakautoindent=true,
+    keywordstyle=\color{magenta},         %style for keywords
+    ndkeywordstyle=\color{blue},          %style for 2nd keywords
+    commentstyle=\color[rgb]{0.7,0.2,0.2},%style for comments
+    stringstyle=\color[rgb]{0.5,0.4,0.2}
+}

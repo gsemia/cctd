@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cctd version="1">
+	<towers>
+<!-- tower effects:
+	splash (splash-range), speed (+n%), range (+n%), slow (-n%), poison
+-->
+		<tower id="basic" title="Basic Tower">
+			<image path=""/>
+			<damage>10</damage>
+			<effects>
+				<effect type="range" value="10"/>
+			</effects>
+			<abilities>
+				<ability name="ground"/> <!-- flying -->
+			</abilities>
+			<upgrades>
+				<upgrade id="1">
+					<image path=""/>
+					<added-effect type="range">10</added-effect>
+					<added-damage>5</added-damage>
+				</upgrade>
+			</upgrades>
+		</tower>
+	</towers>
+	<creeps>
+		<creep id="basic-bunny" title="Bunny">
+			<image path=""/>
+			<life>20</life>
+			<speed>10</speed>
+			<abilities>
+				<ability type="ground"/> <!-- flying -->
+			</abilities>
+		</creep>
+	</creeps>
+	<waves>
+		<wave id="1">
+			<spawntime>30</spawntime>
+			<spawnlength>5</spawnlength>
+			<name>10 Basic Bunnys</name>
+			<creeps spawnmode="row">
+			 	<creep refid="basic-bunny" amount="10"/>
+			</creeps>
+		</wave>
+		<wave id="2">
+			<spawntime>60</spawntime>
+			<spawnlength>10</spawnlength>
+			<name>15 Basic Bunnys</name>
+			<creeps spawnmode="mixed">
+			 	<creep refid="basic-bunny" amount="20"/>
+			 	
+			</creeps>
+		</wave>
+		<wave id="3">
+			<spawntime>90</spawntime>
+			<spawnlength>15</spawnlength>
+			<name>20 Basic Bunnys</name>
+			<creeps spawnmode="random">
+			 	<creep refid="basic-bunny" amount="30"/>
+			</creeps>
+		</wave>
+	</waves>
+	<map>
+		<!-- TODO -->
+	</map>
+</cctd>

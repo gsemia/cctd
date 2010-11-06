@@ -1,0 +1,37 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 Beta 1) (preloaded format=pdflatex 2010.10.7)  18 OCT 2010 20:19
+entering extended mode
+**E:/Documents/ZHAW/SEP/cctd/doc/Projektspezifikation/tex/01_Anwendungsfaelle.t
+ex
+
+(E:/Documents/ZHAW/SEP/cctd/doc/Projektspezifikation/tex/01_Anwendungsfaelle.te
+x
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, arabic, bulgarian, panjabi,
+ kurmanji, basque, russian, estonian, hungarian, czech, german-x-2009-06-19, ma
+layalam, armenian, portuguese, ngerman-x-2009-06-19, nynorsk, ancientgreek, mon
+golianlmc, catalan, sanskrit, pinyin, irish, gujarati, assamese, ukenglish, cop
+tic, croatian, slovenian, danish, dutch, serbian, usenglishmax, esperanto, fars
+i, swedish, finnish, french, galician, german, spanish, kannada, oriya, ngerman
+, swissgerman, monogreek, interlingua, greek, icelandic, bengali, hindi, bokmal
+, marathi, tamil, telugu, indonesian, italian, lao, latin, latvian, lithuanian,
+ mongolian, polish, romanian, slovak, turkish, turkmen, ukrainian, uppersorbian
+, welsh, loaded.
+! Undefined control sequence.
+l.1 \section
+            {Anwendungsfälle}
+? 
+! Emergency stop.
+l.1 \section
+            {Anwendungsfälle}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 494028
+ 315 string characters out of 3144402
+ 48887 words of memory out of 3000000
+ 3394 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 5i,0n,1p,109b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

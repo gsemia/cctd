@@ -1,0 +1,18 @@
+\select@language {german}
+\select@language {german}
+\contentsline {section}{\numberline {1}Idee}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Begriffserk\IeC {\"a}hrung Towerdefense}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}Hauptanwendungsfall}{2}{section.2}
+\contentsline {section}{\numberline {3}Weitere Anforderungen}{3}{section.3}
+\contentsline {section}{\numberline {4}Ressourcen}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Personelles}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Materielles}{4}{subsection.4.2}
+\contentsline {section}{\numberline {5}Risiken}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Nachfrage}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Kosten}{5}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Projektumfang}{5}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Personalausfall}{5}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Hardwareausfall}{5}{subsection.5.5}
+\contentsline {section}{\numberline {6}Grobplanung}{6}{section.6}
+\contentsline {section}{\numberline {7}Kundennutzen}{7}{section.7}
+\contentsline {section}{\numberline {8}Wirtschaftlichkeit}{8}{section.8}

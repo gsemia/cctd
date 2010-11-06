@@ -1,0 +1,24 @@
+help --> new software to install
+
+add new repository: http://m2eclipse.sonatype.org/sites/m2e
+
+install maven integration for eclipse
+
+Have fun waiting 3 hours.
+
+
+
+If you get an error that you should start eclipse with your JDK: 
+
+Open your eclipse.ini and add these two lines:
+
+-vm
+C:\Program Files\Java\jdk1.6.0_18\bin\javaw.exe
+
+
+Replace the Path with the valid path of your Machine and JDK Version 
+Linux users can use fancy symlinks to always point to the newest Version. 
+Windows users can use linkd.exe to do the same but this is a pain in the ass
+
+
+Wenn weiterhin fehler auftreten ändere für den Workspace den JRE auf das aktuelle JDK (via Windows -> Preferences --> Java --> Installed JREs)
